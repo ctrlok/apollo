@@ -132,6 +132,7 @@
                             </span>
                     {% endif %}
 
+                    <div style="display:contents"><a href="https://github.com/{{config.extra.github_repository}}/edit/main/content/{{ page.relative_path }}">Edit on GitHub</a></div>
                     {# View the page on GitHub #}
                     {% if page.extra.repo_view | default(value=config.extra.repo_view) | default(value=false) %}
                         {# Use the page's repo_url if defined, otherwise use the global edit_repo_url #}
